@@ -14,14 +14,9 @@ export default function App () {
       .attr('x', 20)
       .attr('y', 10)
 
-    svg.on('mouseover', function (d) {
+    svg.on('mouseover', function () {
       d3.select(this)
         .style('cursor', 'crosshair')
-    })
-
-    svg.on('mouseout', function (d) {
-      // d3.select(this)
-      //   .style('cursor', 'default')
     })
 
     svg.on('mousemove', function (event) {
